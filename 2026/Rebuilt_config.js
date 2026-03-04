@@ -240,96 +240,137 @@ var config_data = `
       "idx": 0,
       "column": 4
     },
+    {"name": "Crossed Bump",
+    "code": "cb",
+    "type": "bool",
+    "idx": 1,
+    "column": 0
+      
+    },
+    {"name": "Crossed Bump",
+    "code": "cb2",
+    "type": "bool",
+    "idx": 1,
+    "column": 2  
+    },
+    {"name": "Crossed Bump",
+    "code": "cb3",
+    "type": "bool",
+    "idx": 1,
+    "column": 4  
+    },
+
+     {"name": "Crossed Trench",
+     "code": "ct",
+     "type": "bool",
+     "idx": 2,
+     "column": 0    
+     },
+
+    {"name": "Crossed Trench",
+     "code": "ct2",
+     "type": "bool",
+     "idx": 2,
+     "column": 2    
+     },
+
+      {"name": "Crossed Trench",
+     "code": "ct3",
+     "type": "bool",
+     "idx": 2,
+     "column": 4   
+     },
+
     { "name": "Pickup from Depot",
       "code": "tfd",
       "type": "bool",
-      "idx": 1,
+      "idx": 3,
       "column": 0
     },
     { "name": "Pickup form Depot",
       "code": "tfd2",
       "type": "bool",
-      "idx": 1,
+      "idx": 3,
       "column": 2
     },
     { "name": "Pickup from Depot",
       "code": "tfd3",
       "type": "bool",
-      "idx": 1,
+      "idx": 3,
       "column": 4
     },
     { "name": "Pickup from Outpost",
       "code": "tfo",
       "type": "bool",
-      "idx": 2,
+      "idx": 4,
       "column": 0
     },
     
     { "name": "Pickup from Outpost",
       "code": "tfo2",
       "type": "bool",
-      "idx": 2,
+      "idx": 4,
       "column": 2
     },
     { "name": "Pickup from Outpost",
       "code": "tfo3",
       "type": "bool",
-      "idx": 2,
+      "idx": 4,
       "column": 4
     },
 
     { "name": "Pickup from Floor",
       "code": "tff",
       "type": "bool",
-      "idx": 3,
+      "idx": 5,
       "column": 0
     },
     { "name": "Pickup from Floor",
       "code": "tff2",
       "type": "bool",
-      "idx": 3,
+      "idx": 5,
       "column": 2
     },
     { "name": "Pickup from Floor",
       "code": "tff3",
       "type": "bool",
-      "idx": 3,
+      "idx": 5,
       "column": 4
     },
     { "name": "Pass from Neutral Zone",
       "code": "pnz",
       "type": "bool",
-      "idx": 4,
+      "idx": 6,
       "column": 0
     },
     { "name": "Pass from Neutral Zone",
       "code": "pnz2",
       "type": "bool",
-      "idx": 4,
+      "idx": 6,
       "column": 2
     },
     { "name": "Pass from Neutral Zone",
       "code": "pnz3",
       "type": "bool",
-      "idx": 4,
+      "idx": 6,
       "column": 4
     },
     { "name": "Pass from Opp Alliance Zone",
       "code": "poa",
       "type": "bool",
-      "idx": 5,
+      "idx": 7,
       "column": 0
     },
     { "name": "Pass from Opp Alliance Zone",
       "code": "poa2",
       "type": "bool",
-      "idx": 5,
+      "idx": 7,
       "column": 2
     },
     { "name": "Pass from Opp Alliance Zone",
       "code": "poa3",
       "type": "bool",
-      "idx": 5,
+      "idx": 7,
       "column": 4
     }
     
@@ -424,83 +465,43 @@ var config_data = `
       "column": 4
       
     },
-    {"name": "Crossed Bump",
-    "code": "cb",
-    "type": "bool",
-    "idx": 1,
-    "column": 0
-      
-    },
-    {"name": "Crossed Bump",
-    "code": "cb2",
-    "type": "bool",
-    "idx": 1,
-    "column": 2  
-    },
-    {"name": "Crossed Bump",
-    "code": "cb3",
-    "type": "bool",
-    "idx": 1,
-    "column": 4  
-    },
-
-     {"name": "Crossed Trench",
-     "code": "ct",
-     "type": "bool",
-     "idx": 2,
-     "column": 0    
-     },
-
-    {"name": "Crossed Trench",
-     "code": "ct2",
-     "type": "bool",
-     "idx": 2,
-     "column": 2    
-     },
-
-      {"name": "Crossed Trench",
-     "code": "ct3",
-     "type": "bool",
-     "idx": 2,
-     "column": 4   
-     },
-
+    
     { "name": "Died/Immobilized",
       "code": "die",
       "type": "bool",
-      "idx": 3,
+      "idx": 1,
       "column": 0
     },
     { "name": "Died/Immobilized",
       "code": "die2",
       "type": "bool",
-      "idx": 3,
+      "idx": 1,
       "column": 2
     },
     { "name": "Died/Immobilized",
       "code": "die3",
       "type": "bool",
-      "idx": 3,
+      "idx": 1,
       "column": 4
     },
     { "name": "Tippy<br>(almost tipped over)",
       "code": "tip",
       "type": "bool",
-      "idx": 4,
+      "idx": 2,
       "column": 0
     },
 
     { "name": "Tippy<br>(almost tipped over)",
       "code": "tip2",
       "type": "bool",
-      "idx": 4,
+      "idx": 2,
       "column": 2
     },
 
     { "name": "Tippy<br>(almost tipped over)",
       "code": "tip3",
       "type": "bool",
-      "idx": 4,
+      "idx": 2,
       "column": 4
     },
     
@@ -510,7 +511,7 @@ var config_data = `
       "type": "text",
       "size": 15,
       "maxSize": 55,
-      "idx": 5,
+      "idx": 3,
       "column": 0
     },
        { "name": "Comments",
@@ -518,7 +519,7 @@ var config_data = `
       "type": "text",
       "size": 15,
       "maxSize": 55,
-      "idx": 5,
+      "idx": 3,
       "column": 2
     },
        { "name": "Comments",
@@ -526,7 +527,7 @@ var config_data = `
       "type": "text",
       "size": 15,
       "maxSize": 55,
-      "idx": 5,
+      "idx": 3,
       "column": 4
     },
       {"name": "Alliance Acheived Rank Point",
@@ -538,8 +539,9 @@ var config_data = `
             "no": "None"
           },
         "defaultValue": "no",
-        "idx": 6,
+        "idx": 4,
         "column": 0
         }
   ]
 }`;
+
