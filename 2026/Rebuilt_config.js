@@ -17,7 +17,7 @@ var config_data = `
     { "name": "Event",
       "code": "e",
       "type": "event",
-      "defaultValue": "2026 Marysville",
+      "defaultValue": "2026 Troy",
       "required": "true",
       "idx": 1,
       "column": 0
@@ -104,45 +104,46 @@ var config_data = `
       "column": 4
     },
 
-    { "name": "Climb (L1)",
-      "code": "ac",
+    {"name": "Start Location",
+      "code": "sl",
       "type": "radio",
-      "choices":{
-      "cm": "Climbed Middle<br>",
-      "cs": "Climbed Side<br>",
-      "a": "Attempted<br>",
-      "n": "Not Attempted"
+      "choices": {
+      "dt": "Depot Trench<br>",
+      "db": "Depot Bump<br>",
+      "mi": "Middle<br>",
+      "ob": "Outpost Bump<br>",
+      "ot": "Outpost Trench"
       },
-      "defaultValue": "n",
-      "idx": 1,
-      "column": 0
-    },
-    { "name": "Climb (L1)",
-      "code": "ac2",
+       "idx": 1,
+       "column": 0
+     },
+     {"name": "Start Location",
+      "code": "sl2",
       "type": "radio",
-      "choices":{
-      "cm": "Climbed Middle<br>",
-      "cs": "Climbed Side<br>",
-      "a": "Attempted<br>",
-      "n": "Not Attempted"
+      "choices": {
+      "dt": "Depot Trench<br>",
+      "db": "Depot Bump<br>",
+      "mi": "Middle<br>",
+      "ob": "Outpost Bump<br>",
+      "ot": "Outpost Trench"
       },
-      "defaultValue": "n",
-      "idx": 1,
-      "column": 2
-    },
-    { "name": "Climb (L1)",
-      "code": "ac3",
+       "idx": 1,
+       "column": 2
+     },
+     {"name": "Start Location",
+      "code": "sl3",
       "type": "radio",
-      "choices":{
-      "cm": "Climbed Middle<br>",
-      "cs": "Climbed Side<br>",
-      "a": "Attempted<br>",
-      "n": "Not Attempted"
+      "choices": {
+      "dt": "Depot Trench<br>",
+      "db": "Depot Bump<br>",
+      "mi": "Middle<br>",
+      "ob": "Outpost Bump<br>",
+      "ot": "Outpost Trench"
       },
-      "defaultValue": "n",
-      "idx": 1,
-      "column": 4
-    },
+       "idx": 1,
+       "column": 4
+     },
+    
     { "name": "Pickup from Depot",
       "code": "afd",
       "type": "bool",
@@ -211,14 +212,55 @@ var config_data = `
       "idx": 5,
       "column": 2
       },
-      {"name": "Auto Shoot",
+            {"name": "Auto Shoot",
         "code": "as3",
         "type": "bool",
         "idx": 5,
         "column":4
-        }
+        },
+
+      { "name": "Climb (L1)",
+      "code": "ac",
+      "type": "radio",
+      "choices":{
+      "cm": "Climbed Middle<br>",
+      "cs": "Climbed Side<br>",
+      "a": "Attempted<br>",
+      "n": "Not Attempted"
+      },
+      "defaultValue": "n",
+      "idx": 6,
+      "column": 0
+    },
+    { "name": "Climb (L1)",
+      "code": "ac2",
+      "type": "radio",
+      "choices":{
+      "cm": "Climbed Middle<br>",
+      "cs": "Climbed Side<br>",
+      "a": "Attempted<br>",
+      "n": "Not Attempted"
+      },
+      "defaultValue": "n",
+      "idx": 6,
+      "column": 2
+    },
+    { "name": "Climb (L1)",
+      "code": "ac3",
+      "type": "radio",
+      "choices":{
+      "cm": "Climbed Middle<br>",
+      "cs": "Climbed Side<br>",
+      "a": "Attempted<br>",
+      "n": "Not Attempted"
+      },
+      "defaultValue": "n",
+      "idx": 6,
+      "column": 4
+    }
   ],
   "teleop": [
+
     { "name": "11",
       "code": "header_1",
       "type": "title",
@@ -240,7 +282,7 @@ var config_data = `
       "idx": 0,
       "column": 4
     },
-    {"name": "Crossed Bump",
+     {"name": "Crossed Bump",
     "code": "cb",
     "type": "bool",
     "idx": 1,
@@ -259,8 +301,7 @@ var config_data = `
     "idx": 1,
     "column": 4  
     },
-
-     {"name": "Crossed Trench",
+    {"name": "Crossed Trench",
      "code": "ct",
      "type": "bool",
      "idx": 2,
@@ -280,97 +321,59 @@ var config_data = `
      "idx": 2,
      "column": 4   
      },
-
-    { "name": "Pickup from Depot",
-      "code": "tfd",
+    { "name": "Herd Balls",
+      "code": "hb",
       "type": "bool",
       "idx": 3,
       "column": 0
     },
-    { "name": "Pickup form Depot",
-      "code": "tfd2",
+    { "name": "Herd Balls",
+      "code": "hb2",
       "type": "bool",
       "idx": 3,
       "column": 2
     },
-    { "name": "Pickup from Depot",
-      "code": "tfd3",
+    { "name": "Herd Balls",
+      "code": "hb3",
       "type": "bool",
       "idx": 3,
       "column": 4
-    },
-    { "name": "Pickup from Outpost",
-      "code": "tfo",
-      "type": "bool",
-      "idx": 4,
-      "column": 0
     },
     
-    { "name": "Pickup from Outpost",
-      "code": "tfo2",
-      "type": "bool",
-      "idx": 4,
-      "column": 2
-    },
-    { "name": "Pickup from Outpost",
-      "code": "tfo3",
-      "type": "bool",
-      "idx": 4,
-      "column": 4
-    },
-
-    { "name": "Pickup from Floor",
-      "code": "tff",
-      "type": "bool",
-      "idx": 5,
-      "column": 0
-    },
-    { "name": "Pickup from Floor",
-      "code": "tff2",
-      "type": "bool",
-      "idx": 5,
-      "column": 2
-    },
-    { "name": "Pickup from Floor",
-      "code": "tff3",
-      "type": "bool",
-      "idx": 5,
-      "column": 4
-    },
     { "name": "Pass from Neutral Zone",
       "code": "pnz",
       "type": "bool",
-      "idx": 6,
+      "idx": 4,
       "column": 0
     },
     { "name": "Pass from Neutral Zone",
       "code": "pnz2",
       "type": "bool",
-      "idx": 6,
+      "idx": 4,
       "column": 2
     },
     { "name": "Pass from Neutral Zone",
       "code": "pnz3",
       "type": "bool",
-      "idx": 6,
+      "idx": 4,
       "column": 4
     },
     { "name": "Pass from Opp Alliance Zone",
       "code": "poa",
       "type": "bool",
-      "idx": 7,
+      "idx": 5,
       "column": 0
     },
     { "name": "Pass from Opp Alliance Zone",
       "code": "poa2",
       "type": "bool",
-      "idx": 7,
+      "idx": 5,
       "column": 2
     },
     { "name": "Pass from Opp Alliance Zone",
       "code": "poa3",
       "type": "bool",
-      "idx": 7,
+      "idx": 5,      
       "column": 4
     }
     
@@ -463,45 +466,63 @@ var config_data = `
       "team": "3",
       "idx": 0,
       "column": 4
-      
-    },
-    
-    { "name": "Died/Immobilized",
-      "code": "die",
+      },
+   
+  
+    { "name": "Broke",
+      "code": "bk",
       "type": "bool",
       "idx": 1,
+      "column": 0
+    },
+    { "name": "Broke",
+      "code": "bk2",
+      "type": "bool",
+      "idx": 1,
+      "column": 2
+    },
+    { "name": "Broke",
+      "code": "bk3",
+      "type": "bool",
+      "idx": 1,
+      "column": 4
+    },
+   { "name": "Died/Immobilized",
+      "code": "die",
+      "type": "bool",
+      "idx": 2,
       "column": 0
     },
     { "name": "Died/Immobilized",
       "code": "die2",
       "type": "bool",
-      "idx": 1,
+      "idx": 2,
       "column": 2
     },
     { "name": "Died/Immobilized",
       "code": "die3",
       "type": "bool",
-      "idx": 1,
+      "idx": 2,
       "column": 4
-    },
+    }, 
     { "name": "Tippy<br>(almost tipped over)",
       "code": "tip",
       "type": "bool",
-      "idx": 2,
+      "idx": 3,
       "column": 0
     },
 
     { "name": "Tippy<br>(almost tipped over)",
       "code": "tip2",
       "type": "bool",
-      "idx": 2,
+      "idx": 3,
       "column": 2
     },
 
     { "name": "Tippy<br>(almost tipped over)",
       "code": "tip3",
       "type": "bool",
-      "idx": 2,
+      "idx": 3,
       "column": 4
     },
     
@@ -511,7 +532,7 @@ var config_data = `
       "type": "text",
       "size": 15,
       "maxSize": 55,
-      "idx": 3,
+      "idx": 4,
       "column": 0
     },
        { "name": "Comments",
@@ -519,7 +540,7 @@ var config_data = `
       "type": "text",
       "size": 15,
       "maxSize": 55,
-      "idx": 3,
+      "idx": 4,
       "column": 2
     },
        { "name": "Comments",
@@ -527,7 +548,7 @@ var config_data = `
       "type": "text",
       "size": 15,
       "maxSize": 55,
-      "idx": 3,
+      "idx": 4,
       "column": 4
     },
       {"name": "Alliance Acheived Rank Point",
@@ -539,9 +560,8 @@ var config_data = `
             "no": "None"
           },
         "defaultValue": "no",
-        "idx": 4,
+        "idx": 5,
         "column": 0
         }
   ]
 }`;
-
