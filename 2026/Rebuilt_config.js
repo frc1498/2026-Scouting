@@ -103,7 +103,6 @@ var config_data = `
       "idx": 0,
       "column": 4
     },
-
     {"name": "Start Location",
       "code": "sl",
       "type": "radio",
@@ -112,7 +111,7 @@ var config_data = `
       "db": "Depot Bump<br>",
       "mi": "Middle<br>",
       "ob": "Outpost Bump<br>",
-      "ot": "Outpost Trench",
+      "ot": "Outpost Trench<br>",
       "ns": "No Show"
       },
       "defaultValue": "ns",
@@ -127,10 +126,10 @@ var config_data = `
       "db": "Depot Bump<br>",
       "mi": "Middle<br>",
       "ob": "Outpost Bump<br>",
-      "ot": "Outpost Trench",
+      "ot": "Outpost Trench<br>",
       "ns": "No Show"
       },
-      "devaultValue": "ns",
+      "defaultValue": "ns",
        "idx": 1,
        "column": 2
      },
@@ -142,13 +141,14 @@ var config_data = `
       "db": "Depot Bump<br>",
       "mi": "Middle<br>",
       "ob": "Outpost Bump<br>",
-      "ot": "Outpost Trench",
+      "ot": "Outpost Trench<br>",
       "ns": "No Show"
       },
       "defaultValue": "ns",
        "idx": 1,
        "column": 4
      },
+    
     
     { "name": "Pickup from Depot",
       "code": "afd",
@@ -218,14 +218,13 @@ var config_data = `
       "idx": 5,
       "column": 2
       },
-            {"name": "Auto Shoot",
+       {"name": "Auto Shoot",
         "code": "as3",
         "type": "bool",
         "idx": 5,
         "column":4
         },
-
-      { "name": "Climb (L1)",
+        {"name": "Climb (L1)",
       "code": "ac",
       "type": "radio",
       "choices":{
@@ -263,7 +262,10 @@ var config_data = `
       "defaultValue": "n",
       "idx": 6,
       "column": 4
-    }
+    } 
+        
+     
+
   ],
   "teleop": [
 
