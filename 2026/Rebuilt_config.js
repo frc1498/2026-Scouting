@@ -17,7 +17,7 @@ var config_data = `
     { "name": "Event",
       "code": "e",
       "type": "event",
-      "defaultValue": "2026 Troy",
+      "defaultValue": "2026 States",
       "required": "true",
       "idx": 1,
       "column": 0
