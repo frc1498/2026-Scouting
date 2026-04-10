@@ -112,8 +112,10 @@ var config_data = `
       "db": "Depot Bump<br>",
       "mi": "Middle<br>",
       "ob": "Outpost Bump<br>",
-      "ot": "Outpost Trench"
+      "ot": "Outpost Trench",
+      "ns": "No Show"
       },
+      "defaultValue": "ns",
        "idx": 1,
        "column": 0
      },
@@ -125,8 +127,10 @@ var config_data = `
       "db": "Depot Bump<br>",
       "mi": "Middle<br>",
       "ob": "Outpost Bump<br>",
-      "ot": "Outpost Trench"
+      "ot": "Outpost Trench",
+      "ns": "No Show"
       },
+      "devaultValue": "ns",
        "idx": 1,
        "column": 2
      },
@@ -138,8 +142,10 @@ var config_data = `
       "db": "Depot Bump<br>",
       "mi": "Middle<br>",
       "ob": "Outpost Bump<br>",
-      "ot": "Outpost Trench"
+      "ot": "Outpost Trench",
+      "ns": "No Show"
       },
+      "defaultValue": "ns",
        "idx": 1,
        "column": 4
      },
